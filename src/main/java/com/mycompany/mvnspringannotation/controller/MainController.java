@@ -23,11 +23,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController {
 
     @Resource(name = "actorService")
-    private ActorService actorservice;
+    private ActorService actorService;
     
-    @RequestMapping(value = "/actor", method = RequestMethod.GET)
+    @RequestMapping(value = "/actors", method = RequestMethod.GET)
     public String getActors(Model model){
-        List<Actor> actors = actorservice.getAll();
+        List<Actor> actors = actorService.getAll();
         
         model.addAttribute("actors", actors);
         

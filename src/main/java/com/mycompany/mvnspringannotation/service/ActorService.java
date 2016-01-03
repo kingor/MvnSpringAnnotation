@@ -34,7 +34,7 @@ public class ActorService {
         
         Session session = sessionFactory.getCurrentSession();
         
-        Query query = session.createQuery("From Actor");
+        Query query = session.createQuery("FROM Actor");
         
         return query.list();
     }
