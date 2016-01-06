@@ -42,7 +42,7 @@
     p:minPoolSize="10" />
  
  <!-- Declare a transaction manager-->
- <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+ <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"
           p:sessionFactory-ref="sessionFactory" />
    
 </beans>
